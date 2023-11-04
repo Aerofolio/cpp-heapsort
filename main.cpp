@@ -2,8 +2,8 @@
 #include <time.h>
 #include <chrono>
 
-#define ARRAY_SIZE 1000
-#define MAX_NUMBER 5000
+#define ARRAY_SIZE 15
+#define MAX_NUMBER 100
 
 void initArray(int * arr);
 void heapify(int arr[], int N, int i);
