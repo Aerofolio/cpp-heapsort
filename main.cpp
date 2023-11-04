@@ -15,9 +15,13 @@ int main(){
 
     int randomNumberArray[ARRAY_SIZE];
     initArray(randomNumberArray);
+
+    std::cout << "Array gerado: ";
     printArray(randomNumberArray);
+    std::cout << std::endl;
 
     heapSort(randomNumberArray, ARRAY_SIZE);
+    std::cout << "Array ordenado: ";
     printArray(randomNumberArray);
 
     return 0;
@@ -32,7 +36,7 @@ void initArray(int * arr){
 
     auto end = std::chrono::steady_clock::now();
 
-    std::cout << "Tempo para gerar um array do tamanho " << ARRAY_SIZE << ":" << std::endl;
+    std::cout << "Tempo para gerar um array do tamanho " << ARRAY_SIZE << ": ";
     std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << " nanosegundos." << std::endl;
 }
 
@@ -86,7 +90,7 @@ void heapSort(int arr[], int N){
 
     auto end = std::chrono::steady_clock::now();
 
-    std::cout << "Tempo para ordenar um array do tamanho " << ARRAY_SIZE << ":" << std::endl;
+    std::cout << "Tempo para ordenar um array do tamanho " << ARRAY_SIZE << ": ";
     std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << " nanosegundos." << std::endl;
 }
 
