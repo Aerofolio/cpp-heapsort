@@ -32,8 +32,8 @@ void initArray(int * arr){
 
     auto end = std::chrono::steady_clock::now();
 
-    std::cout << "Time to generate array of size " << ARRAY_SIZE << ":" << std::endl;
-    std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << " nanoseconds." << std::endl;
+    std::cout << "Tempo para gerar um array do tamanho " << ARRAY_SIZE << ":" << std::endl;
+    std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << " nanosegundos." << std::endl;
 }
 
 void heapify(int arr[], int N, int i)
@@ -86,8 +86,8 @@ void heapSort(int arr[], int N){
 
     auto end = std::chrono::steady_clock::now();
 
-    std::cout << "Time to sort array of size " << ARRAY_SIZE << ":" << std::endl;
-    std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << " nanoseconds." << std::endl;
+    std::cout << "Tempo para ordenar um array do tamanho " << ARRAY_SIZE << ":" << std::endl;
+    std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << " nanosegundos." << std::endl;
 }
 
 void printArray(int * arr){
